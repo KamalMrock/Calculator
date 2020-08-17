@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> My Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"> </script>
+</head>
+
+<body>
+    <div id="calculator">
+
+
+      
+        <nav> </nav>
+        <main>
+           <header> <h1> CALCULATOR</h1> </header>
+            <input class="input1" type="text" id="input" placeholder="0" readonly="readonly"><br><br>
+            <input class="result1" type="text" id="answer" readonly="readonly">
+            <div id="container">
+                <table>
+                    <tr>
+                        <td> <input class="operator" type="button" id="bspace" value="C" onclick="backspace()"></td>
+                        <td> <input class="operator" type="button" id="ac" value="CE" onclick="clearScreen()"></td>
+                        <td> <input class="operator" type="button" id="mod" value=" %" onclick="per()"></td>
+                        <td> <input class="operator" type="button" id="divide" value=" ÷ " onclick="getoperand('/')"></td>
+                        <td> <input class="operator" type="button" id="root" value="√" onclick="root()"></td>
+                        <td> <input class="operator" type="button" id="pi" value="π" onclick="pi()"> </td>
+
+                    </tr>
+                    <tr>
+                        <td> <input class="number" type="button" id="seven" value="7" onclick="getnumber(7)"></td>
+                        <td> <input class="number" type="button" id="eight" value="8" onclick="getnumber(8)"></td>
+                        <td> <input class="number" type="button" id="nine" value="9" onclick="getnumber(9)"></td>
+                        <td> <input class="operator" type="button" id="mul" value="*" onclick="getoperand('*')"></td>
+                        <td> <input class="operator" type="button" id="exp" value="^" onclick="expo()"></td>
+                        <td> <input class="operator" type="button" id="sin" value="SIN" onclick="sin()"> </td>
+
+                    </tr>
+                    <tr>
+                        <td> <input class="number" type="button" id="four" value="4" onclick="getnumber(4)"></td>
+                        <td> <input class="number" type="button" id="five" value="5" onclick="getnumber(5)"></td>
+                        <td> <input class="number" type="button" id="six" value="6" onclick="getnumber(6)"></td>
+                        <td> <input class="operator" type="button" id="sub" value="-" onclick="getoperand('-')"></td>
+                        <td> <input class="operator" type="button" id="log" value="Log" onclick="log()"></td>
+                        <td> <input class="operator" type="button" id="tan" value="TAN" onclick="tan()"></td>
+
+                    </tr>
+                
+                    <tr>
+                        <td> <input class="number" type="button" id="one" value="1" onclick="getnumber(1)"></td>
+                        <td> <input class="number" type="button" id="two" value="2" onclick="getnumber(2)"></td>
+                        <td> <input class="number" type="button" id="three" value="3" onclick="getnumber(3)"></td>
+                        <td> <input class="operator" type="button" id="add" value="+" onclick="getoperand('+')"></td>
+
+                        <td> <input class="operator" type="button" id="lpar" value="(" onclick="getoperand('(')"></td>
+                        <td> <input class="operator" type="button" id="cos" value="COS" onclick="cos()"></td>
+
+                    </tr>
+                    <tr>
+                        <td> <input class="number" type="button" id="dblzero" value="00" onclick="getnumber('00')"></td>
+                        <td> <input class="number" type="button" id="zero" value="0" onclick="getnumber(0)"></td>
+                        <td> <input class="operator" type="button" id="dot" value="." onclick="getnumber(.)"> </td>
+                        <td> <input class="operator" type="button" id="equal" value="=" onclick="compute()"></td>
+                        <td> <input class="operator" type="button" id="rpar" value=")" onclick="getoperand(')')"></td>
+                        <td> <input class="operator" type="button" id="neg" value="±" onclick="sign_convert()"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+         
+        </main>
+        <footer> Copyright &copy; 2019 Calci.com
+            <br> <a href="mailto:Kanwalpreet@outlook.com">Kanwalpreet@outlook.com</a></footer>
+    </div>
+</body>
+
+</html>
